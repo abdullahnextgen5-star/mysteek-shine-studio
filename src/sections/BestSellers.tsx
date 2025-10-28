@@ -2,37 +2,7 @@ import { motion } from "framer-motion";
 import ProductCard from "@/components/ProductCard";
 import Reveal from "@/components/Reveal";
 import { staggerContainer, scaleIn } from "@/animation/variants";
-
-const products = [
-  {
-    id: 1,
-    image: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=600&h=600&fit=crop",
-    title: "Mystic Purple",
-    shade: "Vibrant Purple",
-    price: 19.99
-  },
-  {
-    id: 2,
-    image: "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&h=600&fit=crop",
-    title: "Electric Blue",
-    shade: "Bold Blue",
-    price: 19.99
-  },
-  {
-    id: 3,
-    image: "https://images.unsplash.com/photo-1614252368236-c8bb0aeff5d1?w=600&h=600&fit=crop",
-    title: "Crimson Dream",
-    shade: "Deep Red",
-    price: 19.99
-  },
-  {
-    id: 4,
-    image: "https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=600&h=600&fit=crop",
-    title: "Sunset Pink",
-    shade: "Hot Pink",
-    price: 19.99
-  }
-];
+import { products } from "@/data/home";
 
 export default function BestSellers() {
   return (

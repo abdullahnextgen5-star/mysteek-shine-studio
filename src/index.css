@@ -113,6 +113,18 @@ All colors MUST be HSL.
     @apply rounded-3xl border border-white/10 backdrop-blur-xl;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   }
+
+  /* Reveal animations */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* Reduced motion */
@@ -124,5 +136,11 @@ All colors MUST be HSL.
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+  
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }

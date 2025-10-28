@@ -4,6 +4,19 @@ import Hero from "@/sections/Hero";
 import ValueProps from "@/sections/ValueProps";
 import BestSellers from "@/sections/BestSellers";
 import HowItWorks from "@/sections/HowItWorks";
+import AnnouncementBar from "@/components/AnnouncementBar";
+import PressStrip from "@/components/PressStrip";
+import StatsTiles from "@/components/StatsTiles";
+import ShadeFamilies from "@/components/ShadeFamilies";
+import Bundles from "@/components/Bundles";
+import BeforeAfterRow from "@/components/BeforeAfterRow";
+import ShadeFinderCta from "@/components/ShadeFinderCta";
+import RoutineBuilder from "@/components/RoutineBuilder";
+import UgcGrid from "@/components/UgcGrid";
+import ReviewsQA from "@/components/ReviewsQA";
+import IngredientsSafety from "@/components/IngredientsSafety";
+import BlogLearn from "@/components/BlogLearn";
+import EmailCapture from "@/components/EmailCapture";
 import { motion } from "framer-motion";
 
 export default function Index() {
@@ -11,11 +24,24 @@ export default function Index() {
     <>
       <Loader minMs={1800} />
       <GlassNav />
+      <AnnouncementBar />
       <main className="relative">
         <Hero />
+        <PressStrip />
+        <StatsTiles />
         <ValueProps />
+        <ShadeFamilies />
         <BestSellers />
+        <Bundles />
         <HowItWorks />
+        <BeforeAfterRow />
+        <ShadeFinderCta />
+        <RoutineBuilder />
+        <UgcGrid />
+        <ReviewsQA />
+        <IngredientsSafety />
+        <BlogLearn />
+        <EmailCapture />
 
         {/* Footer */}
         <motion.footer
